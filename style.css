@@ -1,0 +1,490 @@
+/* -------------------- Overall Page Styles -------------------- */
+
+*
+{ 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #006198;
+  font-family: Arial;
+}
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+/* Clearfix */
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+/* -------------------- Museum of Science Header  --------------------*/
+
+header {
+  height: 35px;
+  width: 100%;
+  display: block;
+  background-color: #001724;
+  padding-top: 5px;
+}
+
+header a {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #f09400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-size: 21px;
+  color: black;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+/* -------------------- Activity Core UI -------------------- */
+
+#activity {
+  display: block;
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#activity-summary {
+  display: block;
+  padding: 15px 20px;
+  background-color: #003a5b;
+}
+
+#overall-directions {
+  display: block;
+  color: white;
+  width: 60%;
+}
+
+.panel {
+  overflow: hidden;
+  margin: 10px auto;
+  border: 1px solid black;
+  min-height: 600px;
+  background-color: white;
+}
+
+.content {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.step-title {
+  display: block;
+  padding: 20px 2% 10px 2%;
+  height: 35px;
+  width: 96%;
+  background-color: #f09400;
+}
+
+.options {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.options ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  font-size: 24px;
+  position: relative;
+}
+
+.collection {
+  width: 240px;
+  height: 240px;
+  margin-right: 70px;
+  margin-top: 60px;
+}
+
+.sorting-method {
+  width: 220px;
+  height: 220px;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.options ul li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#sorting-method-selection {
+  display: none;
+}
+
+.options ul li img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  width: 150px;
+  background: none;
+  border: none;
+  margin-top: 10px;
+}
+
+#start-over-button {
+  display: block;
+  opacity: 0.5;
+}
+
+button img {
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* -------------------- Credits -------------------- */
+
+#credits {
+  display: none;
+  background-color: #003a5b;
+  margin-top: 30px;
+  padding: 60px 5%;
+  width: 90%;
+}
+
+#credits p {
+  float: none;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+}
+
+#credits a {
+  color: #f09400;
+  margin: 0;
+}
+
+#credits img {
+  float: left;
+  width: 150px;
+  margin-right: 15px;
+}
+
+/* -------------------- Sorting Workspace: Main UI -------------------- */
+
+#sorting-workspace {
+  /* margin: 0 auto; */
+  display: none;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+#sorting-canvas {
+  position: absolute;
+  top: 90px;
+  right: 40px;
+  z-index: 0;
+}
+
+#buttons {
+  position: absolute;
+  top: 555px;
+  right: 140px;
+  width: 380px;
+  margin: 30px;
+}
+
+#buttons li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+#error-message {
+  font-size: 21px;
+}
+
+
+#colorable-svg {
+  position: absolute;
+  top: 147px;
+  right: 40px;
+  height: 470px;
+  width: 620px;
+  display: none;
+  z-index: 50;
+}
+
+#bucket-container {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 500px;
+  z-index: 100;
+}
+
+#bucket {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-gap: 3px;
+}
+
+.item {
+  transition: all 50ms ease-in-out;
+  z-index: 1000;
+  touch-action: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.item img {
+  width: 100%;
+}
+
+#done-button {
+  width: 180px;
+  margin-right: 10px;
+}
+
+#reset-button {
+  width: 155px;
+}
+
+#download-button {
+  width: 192px;
+  height: 35px;
+}
+
+#make-another-sort-button {
+  width: 180px;
+  height: 35px;
+}
+
+#sorting-instructions {
+  display: none;
+  position: absolute;
+  width: 475px;
+  top: 75px;
+  right: 185px;
+}
+
+#sort-type-header {
+  color: white;
+}
+
+/* -------------------- Sorting Workspace: Color Bar -------------------- */
+
+#color-picker-bar-container {
+  position: absolute;
+  top: 695px;
+  right: 102px;
+  display: none;
+  width: 480px;
+  height: 95px;
+}
+
+#color-picker-bar {
+  position: absolute;
+  bottom: 10px;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 70px 70px;
+}
+
+.color-option {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.color-option img {
+  margin-left: 12px;
+  width: 33px;
+  opacity: 0.5;
+}
+
+#red {
+  border-radius: 15px 0 0 0;
+  background-color: #ff0000;
+}
+
+#orange {
+  background-color: #ffa500;
+}
+
+#yellow {
+  background-color: #ffff00;
+}
+
+#green {
+  background-color: #329932;
+}
+
+#blue {
+  background-color: #1a1aff;
+}
+
+#purple {
+  border-radius: 0 15px 0 0;
+  background-color: #a100fd;
+}
+
+#white {
+  border-radius: 0 0 0 15px;
+  background-color: #ffffff;
+}
+
+#gray {
+  background-color: #a9a9a9;
+}
+
+#black {
+  background-color: #000000;
+}
+
+#brown {
+  background-color: #8b4513;
+}
+
+#tan {
+  background-color: #d2b48c;
+}
+
+#pink {
+  border-radius: 0  0 15px 0;
+  background-color: #ffa7b6;
+}
+
+/* -------------------- Sorting Workspace: Coloring Interface -------------------- */
+
+.invisible-button {
+  display: none; /* Hidden by default, show when the sorting workspace shows (color sorts only)*/  
+  background-color: rgb(0, 0, 0, 0);
+  z-index: 90;
+}
+
+.invisible-button:hover {
+  display: block;
+  cursor: pointer;
+}
+
+#left-invisible-button {
+  height: 410px;
+  width: 175px;
+  position: absolute;
+  top: 164px;
+  right: 469px;
+}
+
+#middle-invisible-button {
+  height: 410px;
+  width: 175px;
+  position: absolute;
+  top: 163px;
+  right: 263px;
+}
+
+#right-invisible-button {
+  height: 410px;
+  width: 175px;
+  position: absolute;
+  top: 162px;
+  right: 56px;
+}
+
+/* -------------------- Gallery -------------------- */
+
+#gallery {
+  display: none;
+}
+
+#gallery-wrapper {
+  display: block;
+  width: 1030px;
+  height: 670px;
+  margin: 25px auto;
+}
+
+#gallery-grid {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  grid-gap: 10px;
+  color: #444;
+}
+
+.gallery-item {
+  text-align: center;
+  border-radius: 5px;
+  height: 280px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+#gallery-buttons {
+  display: block;
+  width: 387px;
+  height: 50px;
+  margin: 30px auto;
+}
+
+#gallery-buttons li {
+  float: left;
+  list-style-type: none;
+}
+
+#gallery-buttons li:first-child {
+  margin-right: 15px;
+}
+
+/* -------------------- Large Screen Styles -------------------- */
+
+@media only screen and (min-width: 1400px) {
+  /* Only have all tiles in one row if the screen is really big
+  210x210 allows them to all fit in one line */
+  .collection {
+    width: 190px;
+    height: 190px;
+    margin-right: 30px;
+    margin-top: 40px;
+  }
+
+  .content {
+    width: 95%;
+  }
+}

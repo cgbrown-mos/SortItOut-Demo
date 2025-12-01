@@ -1,0 +1,31 @@
+<svg id="color-tray-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620.8 443.76">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 15px;
+      }
+
+      .cls-2 {
+        stroke: #6d6a6a;
+      }
+
+      .cls-3 {
+        fill: #6d6a6a;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect id="left" class="cls-1" x="7.77" y="8.98" width="191" height="425"/>
+    <rect id="middle" class="cls-1" x="214.16" y="8.65" width="191.3" height="425"/>
+    <rect id="right" class="cls-1" x="421.5" y="8.15" width="191.3" height="425"/>
+    <line class="cls-2" x1="206.53" x2="206.53" y2="442.02"/>
+    <path class="cls-3" d="M619,60.15v439H.22v-439H619m1-1H-.78v441H620v-441Z" transform="translate(0.78 -58.35)"/>
+    <line class="cls-2" x1="413.48" y1="1.74" x2="413.48" y2="443.76"/>
+  </g>
+</svg>

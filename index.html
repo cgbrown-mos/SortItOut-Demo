@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N3HBBS');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45777805-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-45777805-2');
+    </script>
+    <title>Sort It Out</title>
+    <meta charset="UTF-8">
+     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=1210">
+    <meta name="description" content="Objects can be sorted in many ways. Select a collection of objects and sort them by characteristics such as color or size.">
+    <meta property="og:title" content="Sort It Out" />
+    <meta property="og:url" content="http://virtualexhibits.mos.org/sort-it-out" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Objects can be sorted in many ways. Select a collection of objects and sort them by characteristics such as color or size."/>
+    <meta property="og:image" content="http://virtualexhibits.mos.org/sort-it-out/images/sort-it-out_og.png" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3HBBS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Museum of Science Header -->
+    <header>
+      <header>
+        <a href="https://www.mos.org/mosathome" target="_blank"><img src="images/left-arrow.svg" height="25" alt="left arrow"></a>
+        <a href="https://www.mos.org/" target="_blank"><img src="images/mos-logo.svg" alt="Museum of Science logo" height="23"></a>
+      </header>
+    <div id="activity-summary">
+      <h1>Sort It Out</h1>
+      <p id="overall-directions">Sorting is one skill that scientists use to organize and classify objects. Explore the collections below and use different sorting methods to find connections between the objects.</p>
+    </div>
+    <!-- Activity -->
+    <section id="activity">
+      <button id="start-over-button"><img alt="start over" src="images/buttons/start-over_button.png"></button>
+      <!-- Panel content (box with activity) begins -->
+      <div id="collection-selection" class="panel">
+        <div class="step-title">
+          <h2>Select a collection of objects you would like to sort.</h2>
+        </div>
+        <div class="content">
+          <div class="options">
+            <ul class="clearfix">
+              <li id="feathers" class="collection"><img alt="feathers" src="images/buttons/feathers_button.png"></li>
+              <li id="beetles" class="collection"><img alt="beetles" src="images/buttons/beetles_button.png"></li>
+              <li id="butterflies" class="collection"><img alt="butterflies" src="images/buttons/butterflies_button.png"></li>
+              <li id="shells" class="collection"><img alt="shells" src="images/buttons/shells_button.png"></li>
+              <li id="sampler" class="collection"><img alt="sampler" src="images/buttons/sampler_button.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="sorting-method-selection" class="panel">
+        <div class="step-title">
+          <h2>Select a sorting method.</h2>
+        </div>
+        <div class="content">
+          <div class="options">
+            <ul id="sorting-methods">
+              <!-- These list items are dynamically generated according to which collection was chosen -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="sorting-workspace" class="panel">
+        <div class="step-title">
+          <h2 id="sort-type-header"><!-- This fills in dynamically --> </h2>
+        </div>
+        <div id="colorable-svg"></div> <!-- Coloring area -->
+        <canvas id="sorting-canvas" class="canvas dropzone" aria-label="Sorting workspace" role="img"></canvas>
+        <div id="bucket-container">
+          <div id="bucket">
+            <!--Grid of sortable items fills in dynamically -->
+          </div>
+        </div>
+        <ul id="buttons">
+          <li id="error-message"><p>&nbsp;</p></li>
+          <li><button id="done-button"><img alt="Submit to gallery" src="images/buttons/submit_button.png"></button><button id="reset-button"><img alt="Clear my sort" src="images/buttons/clear_button.png"></button></li>
+        </ul> 
+        <p id="sorting-instructions"><!-- Fill in depending on how the user is sorting --></p>
+        <div id="left-invisible-button" class="invisible-button"></div>
+        <div id="middle-invisible-button" class="invisible-button"></div>
+        <div id="right-invisible-button" class="invisible-button"></div>
+        <div id="color-picker-bar-container">
+          <div id="color-picker-bar" role="list" aria-label="Color bar">
+            <!-- These have inline background color styles so they can be grabbed by JavaScript
+            and applied to be the paintbrush color -->
+            <div id="red" role="listitem" aria-label="Red" class="color-option" style="background-color: #ff0000">
+              <img src='images/buttons/check-mark_black.svg' alt='The color red has been selected'>         
+            </div>
+            <div id="orange" role="listitem" aria-label="Orange" class="color-option" style="background-color: #ffa500"></div>
+            <div id="yellow" role="listitem" aria-label="Yellow" class="color-option" style="background-color: #ffff00"></div>
+            <div id="green" role="listitem" aria-label="Green" class="color-option" style="background-color: #329932"></div>
+            <div id="blue" role="listitem" aria-label="Blue" class="color-option" style="background-color: #1a1aff"></div>
+            <div id="purple" role="listitem" aria-label="Purple" class="color-option" style="background-color: #a100fd"></div>
+            <div id="white" role="listitem" aria-label="White" class="color-option" style="background-color: #ffffff"></div>
+            <div id="gray" role="listitem" aria-label="Grey" class="color-option" style="background-color: #a9a9a9"></div>
+            <div id="black" role="listitem" aria-label="Black" class="color-option" style="background-color: #000000"></div>
+            <div id="brown" role="listitem" aria-label="Brown" class="color-option" style="background-color: #8b4513 "></div>
+            <div id="tan" role="listitem" aria-label="Tan" class="color-option" style="background-color: #d2b48c"></div>
+            <div id="pink" role="listitem" aria-label="Pink" class="color-option" style="background-color: #ffa7b6"></div>
+          </div>
+        </div>
+      </div>
+      <div id="gallery" class="panel">
+        <div class="step-title">
+          <h2>Sorting Gallery: Explore how other people have sorted their objects.</h2>
+        </div>
+        <div class="content">
+          <div id="gallery-wrapper">
+            <div id="gallery-grid">
+              <div class="gallery-item">
+                <canvas class="gallery-canvas"></canvas>
+                <h3 class="faux-sort-title"></h3>
+              </div>
+              <div id="user-sort" class="gallery-item">
+                <canvas id="user-sort" class="gallery-canvas"></canvas>
+                <h3 id="user-sort-title"><!-- Fill in based on user's sort method --></h3>
+              </div>
+              <div class="gallery-item">
+                <canvas class="gallery-canvas"></canvas>
+                <h3 class="faux-sort-title"><!-- Fill in using faux sort object data --></h3>
+              </div>
+              <div class="gallery-item">
+                <canvas class="gallery-canvas"></canvas>
+                <h3 class="faux-sort-title"><!-- Fill in using faux sort object data --></h3>
+              </div>
+              <div class="gallery-item">
+                <canvas class="gallery-canvas"></canvas>
+                <h3 class="faux-sort-title"><!-- Fill in using faux sort object data --></h3>
+              </div>
+              <div class="gallery-item">
+                <canvas class="gallery-canvas"></canvas>
+                <h3 class="faux-sort-title"><!-- Fill in using faux sort object data --></h3>
+              </div>
+            </div>
+          </div>
+          <ul id="gallery-buttons">
+            <li><button id="download-button"><img alt="Download my sort" src="images/buttons/download-my-sort_button.png"></button></li>
+            <li><button id="make-another-sort-button"><img alt="Try another sort" src="images/buttons/try-another-sort_button.png"></button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Credits -->
+    <section id="credits">
+      <!-- Fill this in dynamically baed on which collection(s) is being sorted -->
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=11'></script>
+    <script type="text/javascript" src="scripts.js"></script> 
+    <script type="text/javascript" src="coloring.js"></script> 
+    <script type="text/javascript" src="fauxsorts.js"></script> 
+    <script type="text/javascript" src="collections.js"></script> 
+    <script type="text/javascript" src="sampler.js"></script> 
+    <script type="text/javascript" src="interact.js"></script> 
+    <script type="text/javascript" src="gallery.js"></script> 
+  </body>
+</html>
