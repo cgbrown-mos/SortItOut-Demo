@@ -7,7 +7,7 @@ var collections = {
 	},
 	"butterflies": {
 		"readableNames": ["Apricot sulphur butterfly", "Emerald birdwing golded butterfly", "Golden morpho butterfly", "Gulf fritillary butterfly", "Helena blue morpho butterfly", "Peruvian hairstreak butterfly", "Pink painted jezabel butterfly", "Pipevine swallowtail butterfly", "Purple glory princess butterfly", "Sky blue morpho butterfly", "Sunset morpho butterfly", "The great Mormon butterfly"],
-		"fileNames": ["apricot-sulphur", "emerald-birdwing-golded", "Golden-Morpho", "gulf-fritillary", "HelenaBlue", "peruvian-hairstreak", "pink-painted-jezabel", "pipevine-swallowtail_cropped", "purple-glory-princess_cropped", "sky-blue-morpho", "sunset-morpho", "the-great-mormon"],
+		"fileNames": ["apricot-sulphur", "Emerald-Birdwing-Golded", "Golden-Morpho", "Gulf-Fritillary", "HelenaBlue", "Peruvian-Hairstreak", "Pink-Painted-Jezabel", "Pipevine-Swallowtail_Cropped", "Purple-Glory-Princess_Cropped", "Sky-Blue-Morpho", "Sunset-Morpho", "The-Great-Mormon"],
 		"sortingMethods": ["size", "color", "free-sort_1", "free-sort_2"],
 		"credits": "Butterfly images used in this activity were provided by <a href='https://www.thebutterflycompany.com/' target='_blank'>The Butterfly Company</a>."
 	},
@@ -19,7 +19,7 @@ var collections = {
 	},
 	"beetles": {
 		"readableNames": ["Armillatus beetle", "Asterisk weevil beetle", "Fancy pants weevil beetle", "Fiddle beetle", "Fire beetle", "Flower beetle", "Giraffa beetle", "Harlequin beetle", "Jewel beetle", "Regal jewel beetle", "Rhino beetle", "Saw toothed stag beetle"],
-		"fileNames": ["armillatus-beetle", "asterisk-weevil", "fancy-pants-weevil", "fiddle-beetle", "fire-beetle", "flower-beetle", "giraffa-beetle", "harlequin-beetle", "jewel-beetle", "regal-jewel", "rhino-beetle", "saw-toothed-stag-beetle"],
+		"fileNames": ["Armillatus-Beetle", "asterisk-weevil", "fancy-pants-weevil", "Fiddle-Beetle", "Fire-Beetle", "flower-beetle", "giraffa-beetle", "harlequin-beetle", "jewel-beetle", "regal-jewel", "rhino-beetle", "Saw-Toothed-Stag-Beetle"],
 		"sortingMethods": ["size", "color", "free-sort_1", "free-sort_2"],
 		"credits": "Beetle images used in this activity were provided by <a href='https://www.thebutterflycompany.com/' target='_blank'>The Butterfly Company</a>."
 	}
