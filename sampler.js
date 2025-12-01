@@ -16,7 +16,7 @@ var samplerItems = {
 	},
 	"butterflies": {
 		"readableNames": ["Apricot sulphur butterfly", "Peruvian hairstreak butterfly", "Pipevine swallowtail butterfly", "Purple glory princess butterfly", "The great Mormon butterfly"],
-		"fileNames": ["apricot-sulphur_s", "peruvian-hairstreak_s", "pipevine-swallowtail_cropped_s", "purple-glory-princess_cropped_s", "the-great-mormon_s"]
+		"fileNames": ["Apricot-Sulphur_s", "Peruvian-Hairstreak_s", "Pipevine-Swallowtail_Cropped_s", "Purple-Glory-Princess_Cropped_s", "The-Great-Mormon_s"]
 	},
 	"shells": {
 		"readableNames": ["Coral lovers shell", "Spiral babylon shell", "Scallop shell 2", "Jacna abalone shell", "Conch shell", "Cone shell 1", "Cone shell 2", "Japanese wonder shell"],
@@ -24,7 +24,7 @@ var samplerItems = {
 	},
 	"beetles": {
 		"readableNames": ["Armillatus beetle", "Fancy pants weevil beetle", "Fiddle beetle", "Harlequin beetle", "Jewel beetle", "Regal jewel beetle", "Rhino beetle", "Saw toothed stag beetle"],
-		"fileNames": ["armillatus-beetle_s", "fancy-pants-weevil_s", "fiddle-beetle_s", "harlequin-beetle_s", "jewel-beetle_s", "regal-jewel_s", "rhino-beetle_s", "saw-toothed-stag-beetle_s"]
+		"fileNames": ["Armillatus-Beetle_s", "Fancy-Pants-Weevil_s", "Fiddle-Beetle_s", "Harlequin-Beetle_s", "Jewel-Beetle_s", "Regal-Jewel_s", "Rhino-Beetle_s", "Saw-Toothed-Stag-Beetle_s"]
 	}
 }
 
